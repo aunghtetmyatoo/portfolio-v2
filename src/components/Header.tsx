@@ -111,7 +111,7 @@ const Header = () => {
             onClick={() => {
               setTheme("dark");
             }}
-            className="w-max fill-purple-600 md:order-8"
+            className="w-max fill-purple-600 text-black md:order-8"
           >
             <MdOutlineDarkMode className="h-4 w-4" />{" "}
           </button>
