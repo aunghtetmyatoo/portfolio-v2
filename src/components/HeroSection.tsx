@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeWriter } from "./TypeWriter";
 
-export const HeroSection = () => {
+const HeroSection = () => {
   const talkAbout = [
     "React",
     "JavaScript",
@@ -22,7 +22,11 @@ export const HeroSection = () => {
     <section id="hero" className="relative isolate overflow-hidden pt-14">
       <div className="bg-gradient-from-t from-off-white absolute inset-x-0 bottom-0 -z-10 h-24 dark:from-slate-950 sm:h-32" />
       <div
-        className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] dark:shadow-slate-700 sm:-mr-80 lg:-mr-96 lg:shadow-xl"
+        className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-40deg] dark:shadow-slate-700 sm:-mr-80 lg:-mr-96 lg:shadow-xl"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[50deg] dark:shadow-slate-700 sm:-mr-80 lg:-mr-96 lg:shadow-xl"
         aria-hidden="true"
       />
       <div className="mx-auto max-w-7xl px-6 lg:px-8 lg:py-32">
@@ -75,7 +79,7 @@ export const HeroSection = () => {
             height={300}
             width={450}
             loading="eager"
-            className="mt-10 aspect-[6/5] max-w-full rounded-2xl object-cover sm:mt-16 lg:ml-20 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2"
+            className="mb-8 mt-10 aspect-[6/5] max-w-full rounded-2xl object-cover sm:mt-16 lg:mb-0 lg:ml-20 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2"
           />
         </div>
       </div>
@@ -83,3 +87,5 @@ export const HeroSection = () => {
     </section>
   );
 };
+
+export default HeroSection;

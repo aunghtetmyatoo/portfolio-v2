@@ -1,8 +1,9 @@
 import { ThemeProvider } from "next-themes";
 
 import Header from "@/components/Header";
-import { HeroSection } from "@/components/HeroSection";
+import HeroSection from "@/components/HeroSection";
 import Skill from "@/components/Skill";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Header />
         <HeroSection />
         <Skill />
+        <Experience />
       </main>
     </ThemeProvider>
   );
