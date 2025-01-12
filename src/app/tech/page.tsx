@@ -106,8 +106,8 @@ export const techData = [
     },
     {
       name: 'Next.js',
-      icon: <RiNextjsFill color="#000000" />,
-      color: '#000000',
+      icon: <RiNextjsFill color="#9BA1AB" />,
+      color: '#9BA1AB',
       link: 'https://nextjs.org',
     },
     {

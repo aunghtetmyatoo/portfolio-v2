@@ -4,7 +4,7 @@ import Contact from '../components/contact';
 import Experience from '../components/experience';
 import Header from '../components/home/header';
 import HeroSection from '../components/home/hero-section';
-import Skill from '../components/Skill';
+import Tech from '../components/home/tech';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <main className="land relative z-10">
         <Header />
         <HeroSection />
-        <Skill />
+        <Tech />
         <Experience />
         <Contact />
       </main>
