@@ -36,11 +36,11 @@ import {
   SiWebpack,
 } from 'react-icons/si';
 
-import Header from '@/components/Header';
+import Header from '@/src/components/home/header';
 
 import styles from './style.module.scss';
 
-const techData = [
+export const techData = [
   [
     {
       name: 'PHP',
