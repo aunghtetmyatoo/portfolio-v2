@@ -1,6 +1,5 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
 import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -9,17 +8,12 @@ import { useEffect, useRef, useState } from "react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { twMerge } from "tailwind-merge";
 
-const Header = () => {
+import { navLinks } from "../../constants/index";
+
+export default function Header() {
   const { systemTheme, theme, setTheme } = useTheme();
   const router = useRouter();
-  console.log(router, "router");
   const [mounted, setMounted] = useState(false);
-  const Links = [
-    { name: "skills", link: "/skills" },
-    { name: "works", link: "/works" },
-    { name: "projects", link: "/projects" },
-    { name: "contact", link: "/contact" },
-  ];
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const touchRef = useRef<HTMLDivElement>(null);
@@ -78,7 +72,7 @@ const Header = () => {
       className={`${
         isScrolled && "bg-opacity-[0.5] shadow-md drop-shadow-lg"
       } linear z-40 mx-auto w-[75%] max-w-6xl bg-white bg-opacity-50 font-medium transition-all duration-500 dark:bg-[#35353579] dark:text-white sm:w-[75%] md:w-[70%] lg:w-[55%] xl:w-[50%] ${
-        open && "bg-opacity-100 dark:bg-[#000]"
+        open && "bg-opacity-100 dark:bg-secondary"
       } drop-shadow-xs sticky top-4 rounded-2xl backdrop-blur-sm`}
     >
       <div className="flex place-items-center items-center justify-between px-8 py-3 md:flex md:justify-center md:space-x-10 md:px-10 lg:space-x-12 xl:space-x-16">
@@ -89,7 +83,7 @@ const Header = () => {
               "text-2xl font-extrabold italic",
               clsx({
                 "text-white": currentTheme === "dark",
-                "text-black": currentTheme === "light",
+                "text-secondary": currentTheme === "light",
               }),
             )}
           >
@@ -101,7 +95,7 @@ const Header = () => {
             onClick={() => {
               setTheme("light");
             }}
-            className="w-max fill-purple-600 md:order-8"
+            className="w-max fill-primary md:order-8"
           >
             <MdOutlineLightMode className="h-4 w-4" />{" "}
           </button>
@@ -110,7 +104,7 @@ const Header = () => {
             onClick={() => {
               setTheme("dark");
             }}
-            className="w-max fill-purple-600 text-black md:order-8"
+            className="w-max fill-primary text-black md:order-8"
           >
             <MdOutlineDarkMode className="h-4 w-4" />{" "}
           </button>
@@ -143,17 +137,17 @@ const Header = () => {
             open ? "top-[3.5rem]" : "top-[-490px]"
           }`}
         >
-          {Links.map((link) => (
+          {navLinks.map((link) => (
             <li key={link.name} className="my-7 text-base md:my-0 md:ml-8">
               <Link
-                href={link.link}
+                href={link.href}
                 onClick={() => clickHandler(`${link.name}`)}
                 className={`${
                   // router === link.link
                   router
-                    ? "font-out text-purple-400"
+                    ? "font-out text-primary"
                     : "font-out text-gray-700 dark:text-white"
-                } duration-500 hover:text-purple-500 dark:hover:text-purple-500`}
+                } duration-500 hover:text-primary-800 dark:hover:text-primary-800`}
               >
                 <span>
                   {link.name}
@@ -170,6 +164,4 @@ const Header = () => {
       </div>
     </nav>
   );
-};
-
-export default Header;
+}
