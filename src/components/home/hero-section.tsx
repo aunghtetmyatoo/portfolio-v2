@@ -1,20 +1,18 @@
-// import { TypeWriter } from '@components/atoms/TypeWriter';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import Image from "next/image";
-import Link from "next/link";
+import { TypeWriter } from './type-writer';
 
-import { TypeWriter } from "./TypeWriter";
-
-const HeroSection = () => {
+export default function HeroSection() {
   const talkAbout = [
-    "React",
-    "JavaScript",
-    "TypeScript",
+    'React',
+    'JavaScript',
+    'TypeScript',
     // "GraphQL",
-    "Redux",
+    'Redux',
     // "Jamstack",
-    "Next.js",
-    "RESTful APIs",
+    'Next.js',
+    'RESTful APIs',
     // "Gatsby",
     // "Svelte",
   ];
@@ -62,7 +60,7 @@ const HeroSection = () => {
             <div className="mt-10 flex items-center gap-x-6">
               <Link
                 href="/contact"
-                className="rounded-md bg-blue-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
               >
                 Get in touch
               </Link>
@@ -87,6 +85,4 @@ const HeroSection = () => {
       <div className="from-off-white absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t dark:from-slate-950 sm:h-32" />
     </section>
   );
-};
-
-export default HeroSection;
+}

@@ -1,13 +1,13 @@
-import Link from "next/link";
-import { ThemeProvider } from "next-themes";
-import React from "react";
+import Link from 'next/link';
+import { ThemeProvider } from 'next-themes';
+import React from 'react';
 import {
   BiLogoFirebase,
   BiLogoJavascript,
   BiLogoPostgresql,
   BiLogoTailwindCss,
   BiLogoTypescript,
-} from "react-icons/bi";
+} from 'react-icons/bi';
 import {
   FaAws,
   FaBootstrap,
@@ -22,8 +22,8 @@ import {
   FaReact,
   FaSass,
   FaVuejs,
-} from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
+} from 'react-icons/fa';
+import { RiNextjsFill } from 'react-icons/ri';
 import {
   SiAlpinedotjs,
   SiFilament,
@@ -34,193 +34,193 @@ import {
   SiRedux,
   SiVite,
   SiWebpack,
-} from "react-icons/si";
+} from 'react-icons/si';
 
-import Header from "@/components/Header";
+import Header from '@/components/Header';
 
-import styles from "./style.module.scss";
+import styles from './style.module.scss';
 
 const techData = [
   [
     {
-      name: "PHP",
+      name: 'PHP',
       icon: <FaPhp color="#777BB4" />,
-      color: "#777BB4",
-      link: "https://www.php.net",
+      color: '#777BB4',
+      link: 'https://www.php.net',
     },
     {
-      name: "Node.js",
+      name: 'Node.js',
       icon: <FaNodeJs color="#339933" />,
-      color: "#339933",
-      link: "https://nodejs.org",
+      color: '#339933',
+      link: 'https://nodejs.org',
     },
     {
-      name: "Typescript",
+      name: 'Typescript',
       icon: <BiLogoTypescript color="#3178C6" />,
-      color: "#3178C6",
-      link: "https://www.typescriptlang.org",
+      color: '#3178C6',
+      link: 'https://www.typescriptlang.org',
     },
     {
-      name: "Javascript",
+      name: 'Javascript',
       icon: <BiLogoJavascript color="#F7DF1E" />,
-      color: "#F7DF1E",
-      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      color: '#F7DF1E',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     },
     {
-      name: "Git",
+      name: 'Git',
       icon: <FaGitAlt color="#F05032" />,
-      color: "#F05032",
-      link: "https://git-scm.com",
+      color: '#F05032',
+      link: 'https://git-scm.com',
     },
     {
-      name: "HTML5",
+      name: 'HTML5',
       icon: <FaHtml5 color="#E34F26" />,
-      color: "#E34F26",
-      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      color: '#E34F26',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     },
     {
-      name: "CSS3",
+      name: 'CSS3',
       icon: <FaCss3Alt color="#1572B6" />,
-      color: "#1572B6",
-      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      color: '#1572B6',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     },
   ],
   [
     {
-      name: "Laravel",
+      name: 'Laravel',
       icon: <FaLaravel color="#FF2D20" />,
-      color: "#FF2D20",
-      link: "https://laravel.com",
+      color: '#FF2D20',
+      link: 'https://laravel.com',
     },
     {
-      name: "React",
+      name: 'React',
       icon: <FaReact color="#61DAFB" />,
-      color: "#61DAFB",
-      link: "https://reactjs.org",
+      color: '#61DAFB',
+      link: 'https://reactjs.org',
     },
     {
-      name: "Vue",
+      name: 'Vue',
       icon: <FaVuejs color="#42b883" />,
-      color: "#42b883",
-      link: "https://vuejs.org",
+      color: '#42b883',
+      link: 'https://vuejs.org',
     },
     {
-      name: "Next.js",
+      name: 'Next.js',
       icon: <RiNextjsFill color="#000000" />,
-      color: "#000000",
-      link: "https://nextjs.org",
+      color: '#000000',
+      link: 'https://nextjs.org',
     },
     {
-      name: "Tailwind CSS",
+      name: 'Tailwind CSS',
       icon: <BiLogoTailwindCss color="#06B6D4" />,
-      color: "#06B6D4",
-      link: "https://tailwindcss.com",
+      color: '#06B6D4',
+      link: 'https://tailwindcss.com',
     },
     {
-      name: "Bootstrap",
+      name: 'Bootstrap',
       icon: <FaBootstrap color="#7952B3" />,
-      color: "#7952B3",
-      link: "https://getbootstrap.com",
+      color: '#7952B3',
+      link: 'https://getbootstrap.com',
     },
   ],
   [
     {
-      name: "MySQL",
+      name: 'MySQL',
       icon: <SiMysql color="#4479A1" />,
-      color: "#4479A1",
-      link: "https://www.mysql.com",
+      color: '#4479A1',
+      link: 'https://www.mysql.com',
     },
     {
-      name: "MongoDB",
+      name: 'MongoDB',
       icon: <SiMongodb color="#47A248" />,
-      color: "#47A248",
-      link: "https://www.mongodb.com",
+      color: '#47A248',
+      link: 'https://www.mongodb.com',
     },
     {
-      name: "Firebase",
+      name: 'Firebase',
       icon: <BiLogoFirebase color="#FFCA28" />,
-      color: "#FFCA28",
-      link: "https://firebase.google.com",
+      color: '#FFCA28',
+      link: 'https://firebase.google.com',
     },
     {
-      name: "AWS",
+      name: 'AWS',
       icon: <FaAws color="#FF9900" />,
-      color: "#FF9900",
-      link: "https://aws.amazon.com",
+      color: '#FF9900',
+      link: 'https://aws.amazon.com',
     },
     {
-      name: "PostgreSQL",
+      name: 'PostgreSQL',
       icon: <BiLogoPostgresql color="#336791" />,
-      color: "#336791",
-      link: "https://www.postgresql.org",
+      color: '#336791',
+      link: 'https://www.postgresql.org',
     },
   ],
   [
     {
-      name: "Docker",
+      name: 'Docker',
       icon: <FaDocker color="#2496ED" />,
-      color: "#2496ED",
-      link: "https://www.docker.com",
+      color: '#2496ED',
+      link: 'https://www.docker.com',
     },
     {
-      name: "Vite",
+      name: 'Vite',
       icon: <SiVite color="#646CFF" />,
-      color: "#646CFF",
-      link: "https://vitejs.dev",
+      color: '#646CFF',
+      link: 'https://vitejs.dev',
     },
     {
-      name: "Webpack",
+      name: 'Webpack',
       icon: <SiWebpack color="#8DD6F9" />,
-      color: "#8DD6F9",
-      link: "https://webpack.js.org",
+      color: '#8DD6F9',
+      link: 'https://webpack.js.org',
     },
     {
-      name: "Digital Ocean",
+      name: 'Digital Ocean',
       icon: <FaDigitalOcean color="#0080FF" />,
-      color: "#0080FF",
-      link: "https://www.digitalocean.com",
+      color: '#0080FF',
+      link: 'https://www.digitalocean.com',
     },
   ],
   [
     {
-      name: "Alpine.js",
+      name: 'Alpine.js',
       icon: <SiAlpinedotjs color="#8BC0D0" />,
-      color: "#8BC0D0",
-      link: "https://alpinejs.dev",
+      color: '#8BC0D0',
+      link: 'https://alpinejs.dev',
     },
     {
-      name: "Livewire",
+      name: 'Livewire',
       icon: <SiLivewire color="#FB6FA9" />,
-      color: "#FB6FA9",
-      link: "https://laravel-livewire.com",
+      color: '#FB6FA9',
+      link: 'https://laravel-livewire.com',
     },
     {
-      name: "Nest.js",
+      name: 'Nest.js',
       icon: <SiNestjs color="#E0234E" />,
-      color: "#E0234E",
-      link: "https://nestjs.com",
+      color: '#E0234E',
+      link: 'https://nestjs.com',
     },
   ],
   [
     {
-      name: "Filament",
+      name: 'Filament',
       icon: <SiFilament color="#F2911A" />,
-      color: "#F2911A",
-      link: "https://filamentphp.com",
+      color: '#F2911A',
+      link: 'https://filamentphp.com',
     },
     {
-      name: "Redux",
+      name: 'Redux',
       icon: <SiRedux color="#764ABC" />,
-      color: "#764ABC",
-      link: "https://redux.js.org",
+      color: '#764ABC',
+      link: 'https://redux.js.org',
     },
   ],
   [
     {
-      name: "Sass",
+      name: 'Sass',
       icon: <FaSass color="#CC6699" />,
-      color: "#CC6699",
-      link: "https://sass-lang.com",
+      color: '#CC6699',
+      link: 'https://sass-lang.com',
     },
   ],
 ];
@@ -235,7 +235,7 @@ const Tech = () => {
             {techData.map((column, columnIndex) => (
               <div
                 key={columnIndex}
-                className={`flex flex-col ${columnIndex === 0 ? "" : "ml-[-75px]"} ${styles[`column-${columnIndex + 1}`]}`}
+                className={`flex flex-col ${columnIndex === 0 ? '' : 'ml-[-75px]'} ${styles[`column-${columnIndex + 1}`]}`}
               >
                 {column.map((tech, techIndex) => (
                   <Link
@@ -250,10 +250,10 @@ const Tech = () => {
                     >
                       {tech.name}
                     </span>
-                    <div className={`${styles["box-face"]}`}>
-                      <div className={`${styles["box-text"]}`}>{tech.icon}</div>
+                    <div className={`${styles['box-face']}`}>
+                      <div className={`${styles['box-text']}`}>{tech.icon}</div>
                     </div>
-                    <div className={`${styles["box-back"]}`}></div>
+                    <div className={`${styles['box-back']}`}></div>
                   </Link>
                 ))}
               </div>

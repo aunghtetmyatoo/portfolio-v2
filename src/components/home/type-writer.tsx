@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { ReactTyped } from "react-typed";
+import { ReactTyped } from 'react-typed';
 
 interface TypeWriterProps {
   strings: string[];

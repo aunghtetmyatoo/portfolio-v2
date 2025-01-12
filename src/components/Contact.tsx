@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
 // import emailjs from "@emailjs/browser";
-import Image from "next/image";
-import { useState } from "react";
+import Image from 'next/image';
+import { useState } from 'react';
 
 const Contact = () => {
   // const formRef = useRef();
   const [loading] = useState(false);
 
-  const [form] = useState({ name: "", email: "", message: "" });
+  const [form] = useState({ name: '', email: '', message: '' });
 
   return (
     <section className="my-20 px-5 sm:px-10" id="contact">
@@ -77,7 +77,7 @@ const Contact = () => {
               type="submit"
               disabled={loading}
             >
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? 'Sending...' : 'Send Message'}
 
               <Image
                 src="/assets/arrow-up.png"

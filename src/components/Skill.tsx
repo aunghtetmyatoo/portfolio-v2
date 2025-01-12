@@ -1,7 +1,7 @@
 // import { AnimatePage } from "@components/atoms/AnimatePage";
-"use client";
+'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
 
 const Skill = () => {
   return (
