@@ -16,7 +16,7 @@ const Header = () => {
   console.log(router, "router");
   const [mounted, setMounted] = useState(false);
   const Links = [
-    { name: "about", link: "/about" },
+    { name: "skills", link: "/skills" },
     { name: "works", link: "/works" },
     { name: "projects", link: "/projects" },
     { name: "contact", link: "/contact" },
