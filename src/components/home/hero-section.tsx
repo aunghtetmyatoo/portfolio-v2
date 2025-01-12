@@ -5,16 +5,12 @@ import { TypeWriter } from './type-writer';
 
 export default function HeroSection() {
   const talkAbout = [
+    'Laravel',
+    'Node.js',
     'React',
-    'JavaScript',
     'TypeScript',
-    // "GraphQL",
-    'Redux',
-    // "Jamstack",
     'Next.js',
-    'RESTful APIs',
-    // "Gatsby",
-    // "Svelte",
+    'Linux',
   ];
 
   return (
@@ -44,29 +40,16 @@ export default function HeroSection() {
               <br />
               You can talk to me about <TypeWriter strings={talkAbout} />.
             </p>
-            {/* <p className="dark:text-off-white text-lg leading-8 text-slate-600">
-              P.S. this website is open-source and available on{" "}
-              <a
-                href="https://github.com/jakeherp/portfolio"
-                title="Link to Github repository"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underlined border-grey-300 dark:border-grey-700 relative border-b-2 font-bold hover:border-b-0"
-              >
-                Github
-              </a>
-              .
-            </p> */}
             <div className="mt-10 flex items-center gap-x-6">
               <Link
                 href="/contact"
-                className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                className="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-primary-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-800"
               >
                 Get in touch
               </Link>
               <Link
                 href="/about"
-                className="text-sm font-semibold leading-6 text-slate-900 transition-all hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-200"
+                className="text-sm font-semibold leading-6 text-secondary-800 transition-all hover:text-secondary-900 dark:text-secondary-100 dark:hover:text-secondary-300"
               >
                 Read more <span aria-hidden="true">→</span>
               </Link>
@@ -82,7 +65,7 @@ export default function HeroSection() {
           />
         </div>
       </div>
-      <div className="from-off-white absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t dark:from-slate-950 sm:h-32" />
+      <div className="from-off-white absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t dark:from-secondary sm:h-32" />
     </section>
   );
 }
