@@ -1,7 +1,8 @@
 "use client";
 
-import { workExperiences } from "../constants/index";
 import Image from "next/image";
+
+import { workExperiences } from "../constants/index";
 
 const Experience = () => {
   return (

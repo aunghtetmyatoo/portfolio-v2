@@ -1,14 +1,13 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useRef, useState } from "react";
+import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
+import { useEffect, useRef, useState } from "react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
-
 import { twMerge } from "tailwind-merge";
-import clsx from "clsx";
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();

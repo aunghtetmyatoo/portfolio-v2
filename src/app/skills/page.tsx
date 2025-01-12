@@ -1,42 +1,44 @@
-import React from "react";
-import styles from "./style.module.scss";
-import {
-  FaPhp,
-  FaNodeJs,
-  FaCss3Alt,
-  FaBootstrap,
-  FaVuejs,
-  FaLaravel,
-  FaGitAlt,
-  FaHtml5,
-  FaReact,
-  FaAws,
-  FaDocker,
-  FaDigitalOcean,
-  FaSass,
-} from "react-icons/fa";
-import { ThemeProvider } from "next-themes";
-import Header from "@/components/Header";
 import Link from "next/link";
+import { ThemeProvider } from "next-themes";
+import React from "react";
 import {
-  BiLogoTypescript,
-  BiLogoJavascript,
   BiLogoFirebase,
+  BiLogoJavascript,
   BiLogoPostgresql,
   BiLogoTailwindCss,
+  BiLogoTypescript,
 } from "react-icons/bi";
 import {
-  SiMysql,
-  SiMongodb,
-  SiVite,
-  SiWebpack,
+  FaAws,
+  FaBootstrap,
+  FaCss3Alt,
+  FaDigitalOcean,
+  FaDocker,
+  FaGitAlt,
+  FaHtml5,
+  FaLaravel,
+  FaNodeJs,
+  FaPhp,
+  FaReact,
+  FaSass,
+  FaVuejs,
+} from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import {
   SiAlpinedotjs,
-  SiLivewire,
   SiFilament,
+  SiLivewire,
+  SiMongodb,
+  SiMysql,
   SiNestjs,
   SiRedux,
+  SiVite,
+  SiWebpack,
 } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
+
+import Header from "@/components/Header";
+
+import styles from "./style.module.scss";
 
 const techData = [
   [
@@ -233,7 +235,7 @@ const Tech = () => {
             {techData.map((column, columnIndex) => (
               <div
                 key={columnIndex}
-                className={`flex flex-col ${columnIndex !== 0 ? "ml-[-75px]" : ""} ${styles[`column-${columnIndex + 1}`]}`}
+                className={`flex flex-col ${columnIndex === 0 ? "" : "ml-[-75px]"} ${styles[`column-${columnIndex + 1}`]}`}
               >
                 {column.map((tech, techIndex) => (
                   <Link

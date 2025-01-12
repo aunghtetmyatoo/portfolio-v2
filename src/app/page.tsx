@@ -1,10 +1,10 @@
 import { ThemeProvider } from "next-themes";
 
+import Contact from "@/components/contact.tsx";
+import Experience from "@/components/Experience";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Skill from "@/components/Skill";
-import Experience from "@/components/Experience";
-import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
