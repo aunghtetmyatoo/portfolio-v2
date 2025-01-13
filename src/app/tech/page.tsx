@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { ThemeProvider } from 'next-themes';
 import React from 'react';
 import {
   BiLogoFirebase,
@@ -36,7 +35,7 @@ import {
   SiWebpack,
 } from 'react-icons/si';
 
-import Header from '@/src/components/home/header';
+import Layout from '@/src/components/layout';
 
 import styles from './style.module.scss';
 
@@ -227,45 +226,42 @@ export const techData = [
 
 const Tech = () => {
   return (
-    <ThemeProvider enableSystem={true} attribute="class">
-      <main className="land relative z-10">
-        <Header />
-        <section className="flex justify-center pl-[75px] pt-10">
-          <div className="flex">
-            {techData.map((column, columnIndex) => (
-              <div
-                key={columnIndex}
-                className={`flex flex-col ${columnIndex === 0 ? '' : 'ml-[-75px]'} ${styles[`column-${columnIndex + 1}`]}`}
-              >
-                {column.map((tech, techIndex) => (
-                  <Link
-                    href={tech.link}
-                    target="_blank"
-                    key={techIndex}
-                    className={`${styles.box}`}
+    <Layout>
+      <section className="flex justify-center py-10 pl-[75px]">
+        <div className="flex">
+          {techData.map((column, columnIndex) => (
+            <div
+              key={columnIndex}
+              className={`flex flex-col ${columnIndex === 0 ? '' : 'ml-[-75px]'} ${styles[`column-${columnIndex + 1}`]}`}
+            >
+              {column.map((tech, techIndex) => (
+                <Link
+                  href={tech.link}
+                  target="_blank"
+                  key={techIndex}
+                  className={`${styles.box}`}
+                >
+                  <span
+                    style={{ color: tech.color }}
+                    className={`${styles.tooltip}`}
                   >
-                    <span
-                      style={{ color: tech.color }}
-                      className={`${styles.tooltip}`}
-                    >
-                      {tech.name}
-                    </span>
-                    <div
-                      className={`${styles['box-face']} bg-[#efefef] dark:bg-secondary-900`}
-                    >
-                      <div className={`${styles['box-text']}`}>{tech.icon}</div>
-                    </div>
-                    <div
-                      className={`${styles['box-back']} bg-gradient-to-r from-white to-[#efefef] dark:from-secondary-900 dark:to-secondary-600`}
-                    ></div>
-                  </Link>
-                ))}
-              </div>
-            ))}
-          </div>
-        </section>
-      </main>
-    </ThemeProvider>
+                    {tech.name}
+                  </span>
+                  <div
+                    className={`${styles['box-face']} bg-[#efefef] dark:bg-secondary-900`}
+                  >
+                    <div className={`${styles['box-text']}`}>{tech.icon}</div>
+                  </div>
+                  <div
+                    className={`${styles['box-back']} bg-gradient-to-r from-white to-[#efefef] dark:from-secondary-900 dark:to-secondary-600`}
+                  ></div>
+                </Link>
+              ))}
+            </div>
+          ))}
+        </div>
+      </section>
+    </Layout>
   );
 };
 

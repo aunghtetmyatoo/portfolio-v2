@@ -1,19 +1,14 @@
-import { ThemeProvider } from 'next-themes';
-
 import Experience from '../components/home/experience';
-import Header from '../components/home/header';
 import HeroSection from '../components/home/hero-section';
 import Tech from '../components/home/tech';
+import Layout from '../components/layout';
 
 export default function Home() {
   return (
-    <ThemeProvider enableSystem={true} attribute="class">
-      <main className="land relative z-10">
-        <Header />
-        <HeroSection />
-        <Tech />
-        <Experience />
-      </main>
-    </ThemeProvider>
+    <Layout>
+      <HeroSection />
+      <Tech />
+      <Experience />
+    </Layout>
   );
 }

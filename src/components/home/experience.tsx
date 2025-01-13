@@ -9,7 +9,7 @@ export default function Experience() {
     <section className="my-20 px-5 sm:px-10" id="work">
       <div className="flex w-full flex-col items-center justify-center space-y-12 text-secondary-600 dark:text-white">
         <p className="text-gray_gradient text-3xl font-semibold sm:text-4xl">
-          Professional Experience
+          Professional Experiences
         </p>
 
         <div className="col-span-2 w-full rounded-lg border border-secondary-400 bg-white dark:border-white dark:bg-secondary lg:w-3/4">
