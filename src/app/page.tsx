@@ -1,6 +1,5 @@
 import { ThemeProvider } from 'next-themes';
 
-import Contact from '../components/contact';
 import Experience from '../components/home/experience';
 import Header from '../components/home/header';
 import HeroSection from '../components/home/hero-section';
@@ -14,7 +13,6 @@ export default function Home() {
         <HeroSection />
         <Tech />
         <Experience />
-        <Contact />
       </main>
     </ThemeProvider>
   );

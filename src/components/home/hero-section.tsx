@@ -56,7 +56,7 @@ export default function HeroSection() {
             </div>
           </div>
           <Image
-            src="/profile.jpg"
+            src="/assets/profile.jpg"
             alt="Photo of AHMO"
             height={300}
             width={450}

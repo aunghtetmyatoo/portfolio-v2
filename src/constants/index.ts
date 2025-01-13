@@ -265,7 +265,7 @@ export const workExperiences = [
     duration: 'Feb 2024 - Present',
     title:
       'Directed development efforts, working alongside project managers and collaborating with team members. Supported the growth of junior developers by providing mentorship and training to help them improve their skills and become proficient developers. Ensured a high-quality codebase by implementing coding standards, performing code reviews, and promoting best practices.',
-    icon: '/company3.jpeg',
+    icon: '/assets/company3.jpeg',
   },
   {
     id: 2,
@@ -275,7 +275,7 @@ export const workExperiences = [
     title:
       // 'Dedicated and enthusiastic web developer with a strong foundation in web development technologies and a passion for creating responsive and visually appealing websites. Designing and developing high-quality software solutions: designing, developing, testing, and deploying software applications using different programming languages, frameworks, and tools. Participating and offering technical support and advice to architects, developers, and quality assurance professionals. Maintaining code quality ensuring that the codebase is maintained at a high level of quality, including enforcing coding standards, performing code reviews, and ensuring that best practices are followed. Working closely with cross-functional teams, including product management, UI/UX design, and quality assurance, to collaborate on project objectives and deliverables. Identifying and resolving technical issues, bugs, and performance problems in software applications.',
       'Passionate web developer with a strong foundation in web technologies, focused on creating responsive and visually appealing websites. Experienced in designing, developing, testing, and deploying software applications. Skilled in maintaining high code quality, performing code reviews, and following best practices. Collaborates effectively with cross-functional teams to achieve project goals and resolve technical issues.',
-    icon: '/company2.jpg',
+    icon: '/assets/company2.jpg',
   },
   {
     id: 3,
@@ -284,6 +284,6 @@ export const workExperiences = [
     duration: 'May 2021 - Jan 2022',
     title:
       'Developed a solid foundation in learning, particularly in CSS and Javascript, and utilized these technologies extensively. Closely collaborated with senior developers to guarantee that website development adhered to project requirements and best practices. Maintain and test ongoing projects',
-    icon: '/company1.jpg',
+    icon: '/assets/company1.jpg',
   },
 ];
