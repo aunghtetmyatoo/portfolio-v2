@@ -260,32 +260,30 @@ export const myProjects = [
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
+    name: 'ConceptX International School',
+    pos: 'Senior Full Stack Developer',
+    duration: 'Feb 2024 - Present',
     title:
-      'Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.',
-    icon: '/assets/framer.svg',
-    animation: 'victory',
+      'Directed development efforts, working alongside project managers and collaborating with team members. Supported the growth of junior developers by providing mentorship and training to help them improve their skills and become proficient developers. Ensured a high-quality codebase by implementing coding standards, performing code reviews, and promoting best practices.',
+    icon: '/company3.jpeg',
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
+    name: 'Nine Complex Co., Ltd',
+    pos: 'Full Stack Developer',
+    duration: 'March 2022 - Dec 2023',
     title:
-      'Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.',
-    icon: '/assets/figma.svg',
-    animation: 'clapping',
+      // 'Dedicated and enthusiastic web developer with a strong foundation in web development technologies and a passion for creating responsive and visually appealing websites. Designing and developing high-quality software solutions: designing, developing, testing, and deploying software applications using different programming languages, frameworks, and tools. Participating and offering technical support and advice to architects, developers, and quality assurance professionals. Maintaining code quality ensuring that the codebase is maintained at a high level of quality, including enforcing coding standards, performing code reviews, and ensuring that best practices are followed. Working closely with cross-functional teams, including product management, UI/UX design, and quality assurance, to collaborate on project objectives and deliverables. Identifying and resolving technical issues, bugs, and performance problems in software applications.',
+      'Passionate web developer with a strong foundation in web technologies, focused on creating responsive and visually appealing websites. Experienced in designing, developing, testing, and deploying software applications. Skilled in maintaining high code quality, performing code reviews, and following best practices. Collaborates effectively with cross-functional teams to achieve project goals and resolve technical issues.',
+    icon: '/company2.jpg',
   },
   {
     id: 3,
-    name: 'Notion',
+    name: 'Meta Team Co., Ltd',
     pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
+    duration: 'May 2021 - Jan 2022',
     title:
-      'Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.',
-    icon: '/assets/notion.svg',
-    animation: 'salute',
+      'Developed a solid foundation in learning, particularly in CSS and Javascript, and utilized these technologies extensively. Closely collaborated with senior developers to guarantee that website development adhered to project requirements and best practices. Maintain and test ongoing projects',
+    icon: '/company1.jpg',
   },
 ];

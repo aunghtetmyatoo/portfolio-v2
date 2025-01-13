@@ -25,7 +25,7 @@ export default function HeroSection() {
         aria-hidden="true"
       />
       <div className="mx-auto max-w-7xl px-6 lg:px-8 lg:py-32">
-        <div className="mx-auto max-w-2xl text-black dark:text-white lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+        <div className="mx-auto max-w-2xl text-secondary-600 dark:text-white lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
           <h1 className="headline max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl lg:col-span-2 xl:col-auto">
             I&apos;m Aung Htet Myat Oo
           </h1>
