@@ -250,10 +250,14 @@ const Tech = () => {
                     >
                       {tech.name}
                     </span>
-                    <div className={`${styles['box-face']}`}>
+                    <div
+                      className={`${styles['box-face']} bg-[#efefef] dark:bg-secondary-900`}
+                    >
                       <div className={`${styles['box-text']}`}>{tech.icon}</div>
                     </div>
-                    <div className={`${styles['box-back']}`}></div>
+                    <div
+                      className={`${styles['box-back']} bg-gradient-to-r from-white to-[#efefef] dark:from-secondary-900 dark:to-secondary-600`}
+                    ></div>
                   </Link>
                 ))}
               </div>
