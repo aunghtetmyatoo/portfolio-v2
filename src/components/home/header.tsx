@@ -71,7 +71,7 @@ export default function Header() {
       ref={touchRef}
       className={`${
         isScrolled && 'bg-opacity-[0.5] shadow-md drop-shadow-lg'
-      } linear z-40 mx-auto w-[75%] max-w-6xl bg-white bg-opacity-50 font-medium transition-all duration-500 dark:bg-[#35353579] dark:text-white sm:w-[75%] md:w-[70%] lg:w-[55%] xl:w-[50%] ${
+      } linear z-40 mx-auto w-[75%] max-w-6xl bg-white bg-opacity-50 font-medium transition-all duration-500 dark:bg-[#35353579] dark:text-primary-100 sm:w-[75%] md:w-[70%] lg:w-[55%] xl:w-[50%] ${
         open && 'bg-opacity-100 dark:bg-secondary'
       } drop-shadow-xs sticky top-4 rounded-2xl backdrop-blur-sm`}
     >
@@ -82,8 +82,8 @@ export default function Header() {
             className={twMerge(
               'text-2xl font-extrabold italic',
               clsx({
-                'text-white': currentTheme === 'dark',
-                'text-secondary': currentTheme === 'light',
+                'text-primary-100': currentTheme === 'dark',
+                'text-secondary-600': currentTheme === 'light',
               }),
             )}
           >
@@ -104,7 +104,7 @@ export default function Header() {
             onClick={() => {
               setTheme('dark');
             }}
-            className="w-max fill-primary text-black md:order-8"
+            className="w-max fill-primary text-secondary-600 md:order-8"
           >
             <MdOutlineDarkMode className="h-4 w-4" />{' '}
           </button>
@@ -117,17 +117,17 @@ export default function Header() {
           <div
             className={` ${
               open && 'translate-y-[5px] rotate-45'
-            } relative h-[0.1125rem] w-4 origin-center rounded-xl bg-black fill-black text-black transition-all duration-500 ease-in dark:bg-white/70 dark:text-white/70`}
+            } relative h-[0.1125rem] w-4 origin-center rounded-xl bg-secondary-600 fill-secondary-600 text-secondary-600 transition-all duration-500 ease-in dark:bg-primary-100 dark:text-primary-100`}
           ></div>
           <div
             className={` ${
               open && 'translate-x-20 opacity-0'
-            } relative h-[0.1rem] w-4 origin-center rounded-xl bg-black fill-black text-black transition-all duration-1000 ease-in-out dark:bg-white/70 dark:text-white/70`}
+            } relative h-[0.1rem] w-4 origin-center rounded-xl bg-secondary-600 fill-secondary-600 text-secondary-600 transition-all duration-1000 ease-in-out dark:bg-primary-100 dark:text-primary-100`}
           ></div>
           <div
             className={` ${
               open && '-translate-y-[5px] -rotate-45'
-            } relative h-[0.1125rem] w-4 origin-center rounded-xl bg-black fill-black text-black transition-all duration-500 ease-in dark:bg-white/70 dark:text-white/70`}
+            } relative h-[0.1125rem] w-4 origin-center rounded-xl bg-secondary-600 fill-secondary-600 text-secondary-600 transition-all duration-500 ease-in dark:bg-primary-100 dark:text-primary-100`}
           ></div>
         </div>
         <ul
@@ -146,13 +146,13 @@ export default function Header() {
                   // router === link.link
                   router
                     ? 'font-out text-primary'
-                    : 'font-out text-gray-700 dark:text-white'
+                    : 'font-out text-gray-700 dark:text-primary-100'
                 } duration-500 hover:text-primary-800 dark:hover:text-primary-800`}
               >
                 <span>
                   {link.name}
                   {link.name === 'timeline' && (
-                    <sup className="rounded border-sky-100 bg-red-600 px-1 text-[8px] font-semibold text-white">
+                    <sup className="rounded border-sky-100 bg-red-600 px-1 text-[8px] font-semibold text-primary-100">
                       1
                     </sup>
                   )}
