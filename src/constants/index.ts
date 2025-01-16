@@ -287,3 +287,66 @@ export const workExperiences = [
     icon: '/assets/company1.jpg',
   },
 ];
+
+export const projects = [
+  {
+    title: 'Housing For All Property',
+    client: {
+      name: 'Housing For All Property',
+      logo: '/assets/project1-logo.png',
+    },
+    skills: ['Laravel', 'Bootstrap', 'JQuery', 'Backpack'],
+    image: '/assets/project1.png',
+    description:
+      '“Housing for All Property” is a comprehensive real estate platform that seamlessly connects seekers, agents, companies, and administrators, providing a user-friendly interface for property listings, sales, and rentals I spearheaded the creation of a dynamic web app, a customizable backpack’s admin panel, and a seamless API for the application.',
+    slug: 'housing-for-all-property',
+    url: 'https://housingforallproperty.com',
+    githubUrl: null,
+    gitlabUrl: null,
+  },
+  {
+    title: 'Moe Hein Gabar',
+    client: {
+      name: 'Moe Hein Gabar',
+      logo: '/assets/project2-logo.png',
+    },
+    skills: ['Laravel', 'MySQL', 'Backpack', 'Apache', 'AWS'],
+    image: '/assets/project2.png',
+    description:
+      '“Moe Hein Gabar” is a pharmacy management project that helps to purchase from suppliers and sell products to customers. I developed an optimization of the admin dashboard, that provided administrators with a centralized hub for managing users, monitoring inventory, processing orders and generating reports.',
+    slug: 'moe-hein-gabar',
+    url: 'https://moeheingabar.com',
+    githubUrl: null,
+    gitlabUrl: 'https://gitlab.com/kyawthihalin/pharmacy',
+  },
+  {
+    title: 'ConceptX (LMS)',
+    client: {
+      name: 'ConceptX International School',
+      logo: '/assets/company3.jpeg',
+    },
+    skills: ['Vue.js', 'MySQL', 'Firebase', 'Laravel', 'Nginx', 'Filament'],
+    image: '/assets/project3.png',
+    description:
+      'ConceptX is an online learning platform focus on the grade 11 courses to improve the education system of Myanmar. The courses are taught by experienced instructors. Provide an API for this application, maintain it, and work with the server architecture, CI/CD pipeline, and data structures.',
+    slug: 'conceptx-lms',
+    url: 'https://app.conceptxmm.com',
+    githubUrl: 'https://github.com/ConceptX/conceptx-sms',
+    gitlabUrl: null,
+  },
+  {
+    title: 'Movies App',
+    client: {
+      name: 'Personal',
+      logo: '/assets/profile.jpg',
+    },
+    skills: ['LiveWire', 'TailwindCSS', 'Alpine.js', 'Laravel', 'Vercel'],
+    image: '/assets/project4.png',
+    description:
+      'I developed a “Movies App” that provides access to a wide range of movies, tv shows, and actors. Users can explore movie details, watch trailers, and easily search for their favorite content. This app offers an entertainment experience, making it simple for users to discover and enjoy their preferred movies and shows.',
+    slug: 'movies-app',
+    url: 'https://movies-ahmo.vercel.app',
+    githubUrl: 'https://github.com/aunghtetmyatoo/laravel_movies',
+    gitlabUrl: null,
+  },
+];

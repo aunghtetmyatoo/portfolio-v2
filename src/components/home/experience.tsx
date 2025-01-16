@@ -7,7 +7,7 @@ import { workExperiences } from '../../constants/index';
 export default function Experience() {
   return (
     <section className="my-20 px-5 sm:px-10" id="work">
-      <div className="flex w-full flex-col items-center justify-center space-y-12 text-secondary-600 dark:text-white">
+      <div className="flex w-full flex-col items-center justify-center space-y-12 text-secondary-600 dark:text-primary-100">
         <p className="text-gray_gradient text-3xl font-semibold sm:text-4xl">
           Professional Experiences
         </p>
