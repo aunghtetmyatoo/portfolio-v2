@@ -1,7 +1,7 @@
 // import { AnimatePage } from "@components/atoms/AnimatePage";
 'use client';
 
-import { techData } from '@/src/app/tech/page';
+import { techData } from '@/src/components/tech-data';
 
 export default function Tech() {
   return (
