@@ -143,3 +143,25 @@
     visibility 0s linear 0.3s,
     opacity 1s linear 0.3s;
 }
+
+@media (max-width: 767px) {
+  .column-7 {
+    display: none;
+  }
+}
+
+@media (max-width: 636px) {
+  .column-6,
+  .column-7 {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .column-4,
+  .column-5,
+  .column-6,
+  .column-7 {
+    display: none;
+  }
+}

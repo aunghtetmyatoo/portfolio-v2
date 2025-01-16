@@ -9,7 +9,7 @@ import styles from './style.module.scss';
 export default function Tech() {
   return (
     <Layout>
-      <section className="flex justify-center py-10 pl-[75px]">
+      <section className="flex justify-center py-10 lg:pl-[75px]">
         <div className="flex">
           {techData.map((column, columnIndex) => (
             <div
