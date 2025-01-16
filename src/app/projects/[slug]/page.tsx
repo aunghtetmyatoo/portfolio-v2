@@ -39,7 +39,7 @@ export default function ProjectDetail({ params }: PageProps) {
 
   return (
     <Layout>
-      <div className="mx-auto w-full px-4 py-10 md:max-w-4xl lg:max-w-7xl lg:py-20">
+      <div className="mx-auto w-full px-4 py-10 text-secondary-600 dark:text-primary-100 md:max-w-4xl lg:max-w-7xl lg:py-20">
         <h1 className="headline mt-8 pb-4 text-3xl md:text-3xl lg:text-4xl">
           {title}
         </h1>
