@@ -4,7 +4,6 @@
 import { techData } from '@/src/app/tech/page';
 
 export default function Tech() {
-  console.log(techData);
   return (
     <section id="tools" className="my-20">
       <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-x-16 gap-y-8 px-6">
